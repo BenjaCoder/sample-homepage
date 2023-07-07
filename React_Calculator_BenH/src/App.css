@@ -1,0 +1,38 @@
+* {
+    font-family: sans-serif;
+}
+
+input, button {
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+input {
+    display: block;
+    margin-bottom: 20px;
+}
+
+button {
+    border: 1px solid grey;
+    background: whitesmoke;
+    margin-right: 5px;
+    font-variant: small-caps;
+}
+
+button:hover {
+    cursor: pointer;
+    box-shadow: 0px 2px 3px #aaa;
+}
+
+button:nth-last-child(2),
+button:nth-last-child(1) {
+    background: tomato;
+    color: white;
+}
+
+.result {
+    font-family: 'alarm clock', sans-serif;
+    font-size: 32px;
+    margin-bottom: 10px;
+}

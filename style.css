@@ -31,7 +31,7 @@ nav ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 300px;
+    width: 360px;
     margin: 20px auto 20px;
     background-color: pink;
     padding: 0;
@@ -51,6 +51,7 @@ nav ul a:hover {
 
 nav li {
     display: block;
+    font-size: 1rem;
 }
 
 main > section {
@@ -67,8 +68,25 @@ main > section:nth-child(1) {
 
 .article-one {
     display: flex;
+    flex-direction: column;
     align-items: center;
     font-size: 24px;
+}
+
+.article-one-div {
+    display: flex;
+    align-items: center;
+}
+
+.promo {
+    width: 100%;
+    max-height: 300px;
+    animation: promoFlash 0.5s ease-out 0.2s infinite alternate;
+}
+
+@keyframes promoFlash {
+    from {opacity: 1; transform: skewX(5deg);}
+    to {opacity: 0.2; transform: skewX(-5deg);}
 }
 
 .img--article-one {
@@ -95,6 +113,13 @@ main > section:nth-child(2) > article {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+main > section:nth-child(2) > article:hover {
+    box-shadow: 5px 5px 15px blue;
+    background-color: green;
+    color: white;
+    text-shadow: 2px 2px 1px black;
 }
 
 figure {
@@ -127,5 +152,10 @@ footer > div > img {
 }
 
 .copyright {
+    color: white;
     text-shadow: 0 0 8px white, 0 0 18px white, 0 0 8px white, 1px 1px 28px white;
+    background-color: red;
+    padding: 8px 10px 10px;
+    border-radius: 30px;
+    box-shadow: 3px 3px 2px crimson;
 }
